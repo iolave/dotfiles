@@ -25,7 +25,19 @@ function prompt_yn() {
 }
 
 UNINSTALLED_DEPENDENCIES=()
+UNINSTALLED_CASK_DEPENDENCIES=()
+CASKS=$(brew list --cask)
+
 function brew_dependency_check () {
+	if [[ "$1" == "--cask" ]]; then
+		PKG=$2
+		echo $CASKS | grep -o "$PKG" &> /dev/null
+
+		if [[ "$?" == "0" ]]; then return; fi
+		UNINSTALLED_CASK_DEPENDENCIES+=("${PKG}")
+		return
+	fi
+
 	DEP=$1
 	PKG=$2
 
@@ -70,7 +82,24 @@ function install_dependencies() {
 
 	IFS=" "
 	eval "brew install ${DEPS[*]}"
+}
 
+function install_cask_dependencies() {
+	DEPS=$@
+
+	if [[ "${DEPS}" == "" ]]; then
+		return
+	fi
+
+	prompt_yn "Dependencies '${DEPS}' are not installed"
+        PROMPT_VALUE=$?
+        if [[ "$PROMPT_VALUE" == "1" ]]; then
+            	echo "[WARN] dependencies '${DEPS}' were not installed"
+		return
+	fi
+
+	IFS=" "
+	eval "brew install --cask ${DEPS[*]}"
 }
 
 which brew &> /dev/null
@@ -105,11 +134,13 @@ if [[ "$IS_BREW_INSTALLED" == "0" ]]; then
 		brew_dependency_check go golang
 		brew_dependency_check mongosh
 		brew_dependency_check rustc rust
-		# brew_dependency_check visual-studio-code
-		# brew_dependency_check tiles
-		# brew_dependency_check alt-tab
+		brew_dependency_check terraform
+		brew_dependency_check --cask visual-studio-code
+		brew_dependency_check --cask tiles
+		brew_dependency_check --cask alt-tab
 
 		install_dependencies $UNINSTALLED_DEPENDENCIES
+		install_cask_dependencies $UNINSTALLED_CASK_DEPENDENCIES
 	fi
 fi
 
