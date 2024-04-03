@@ -26,14 +26,11 @@ function prompt_yn() {
 
 UNINSTALLED_DEPENDENCIES=()
 UNINSTALLED_CASK_DEPENDENCIES=()
-CASKS=$(brew list --cask)
 
 function brew_dependency_check () {
 	if [[ "$1" == "--cask" ]]; then
 		PKG=$2
-		echo $CASKS | grep -o "$PKG" &> /dev/null
-
-		if [[ "$?" == "0" ]]; then return; fi
+		if [ -d "${HOMEBREW_PREFIX}/Caskroom/${PKG}" ]; then return; fi
 		UNINSTALLED_CASK_DEPENDENCIES+=("${PKG}")
 		return
 	fi
