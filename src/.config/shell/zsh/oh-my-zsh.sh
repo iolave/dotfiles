@@ -1,3 +1,12 @@
+# Checking for oh-my-zsh install. If it is not found it will ran
+# the install command from the website (https://ohmyz.sh/)
+if [ "$(uname)" = "Darwin" ]; then
+	if [ ! -d "/Users/$(whoami)/.oh-my-zsh" ]; then
+		sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	fi
+fi
+
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
