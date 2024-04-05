@@ -136,6 +136,7 @@ if [[ "$IS_BREW_INSTALLED" == "0" ]]; then
 		brew_dependency_check --cask visual-studio-code
 		brew_dependency_check --cask tiles
 		brew_dependency_check --cask alt-tab
+		brew_dependency_check --cask slack
 
 		install_dependencies $UNINSTALLED_DEPENDENCIES
 		install_cask_dependencies $UNINSTALLED_CASK_DEPENDENCIES
