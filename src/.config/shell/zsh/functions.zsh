@@ -1,4 +1,4 @@
-PATH_DEV="$HOME/developer"
+PATH_DEV="$HOME/Developer"
 export DEV=$PATH_DEV
 
 # Allows to open vscode faster
