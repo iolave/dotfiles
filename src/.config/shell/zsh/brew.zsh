@@ -132,6 +132,7 @@ if [[ "$IS_BREW_INSTALLED" == "0" ]]; then
 		brew_dependency_check mongosh
 		brew_dependency_check rustc rust
 		brew_dependency_check terraform
+		brew_dependency_check gpg 
 		brew_dependency_check --cask raycast 
 		brew_dependency_check --cask visual-studio-code
 		brew_dependency_check --cask tiles
