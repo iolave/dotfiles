@@ -140,6 +140,7 @@ if [[ "$IS_BREW_INSTALLED" == "0" ]]; then
 		brew_dependency_check --cask slack
 		brew_dependency_check --cask warp
 		brew_dependency_check --cask hiddenbar 
+		brew_dependency_check --cask firefox 
 
 		install_dependencies $UNINSTALLED_DEPENDENCIES
 		install_cask_dependencies $UNINSTALLED_CASK_DEPENDENCIES
