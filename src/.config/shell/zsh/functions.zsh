@@ -40,3 +40,9 @@ function icloud() {
                 return 1
         fi
 }
+
+# git update branch
+function gub () {
+	git pull origin $(git branch --show-current)
+}
+
