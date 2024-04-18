@@ -123,6 +123,7 @@ if [[ "$IS_BREW_INSTALLED" == "0" ]]; then
 		brew_dependency_check aws awscli
 		brew_dependency_check htop
 		brew_dependency_check nvim neovim
+		brew_dependency_check bun oven-sh/bun/bun
 		brew_dependency_check nmap 
 		brew_dependency_check openvpn
 		brew_dependency_check telnet

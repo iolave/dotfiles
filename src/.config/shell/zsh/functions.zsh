@@ -42,7 +42,12 @@ function icloud() {
 }
 
 # git update branch
-function gub () {
+function pull_branch () {
 	git pull origin $(git branch --show-current)
+}
+
+# git pull branch
+function push_branch () {
+	git push origin $(git branch --show-current)
 }
 
