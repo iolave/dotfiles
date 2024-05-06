@@ -1,3 +1,3 @@
-alias ls="ls -ltrh --color"
-alias la="ls -altrh --color"
+alias ls="ls -lh --color"
+alias la="ls -alh --color"
 alias vim="$(which nvim)"
