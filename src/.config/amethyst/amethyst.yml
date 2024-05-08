@@ -5,3 +5,7 @@
 layouts:
   - tall-right
   - tall
+floating: [
+  "com.apple.finder",
+  "com.apple.systempreferences"
+]
