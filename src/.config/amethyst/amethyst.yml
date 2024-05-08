@@ -9,3 +9,5 @@ floating: [
   "com.apple.finder",
   "com.apple.systempreferences"
 ]
+enables-layout-hud-on-space-change: false
+
