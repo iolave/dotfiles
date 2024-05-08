@@ -1,3 +1,7 @@
+# See https://github.com/ianyh/Amethyst/blob/development/.amethyst.sample.yml
+# for an amethyst example config file with all the available options that can
+# be configured.
+
 layouts:
   - tall-right
   - tall
