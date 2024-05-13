@@ -11,4 +11,4 @@ floating: [
   "com.apple.systempreferences"
 ]
 enables-layout-hud-on-space-change: false
-
+restore-layouts-on-launch: true
