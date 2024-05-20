@@ -5,6 +5,7 @@
 layouts:
   - tall-right
   - tall
+  - floating
   - row
 floating: [
   "com.apple.finder",
