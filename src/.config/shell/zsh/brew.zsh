@@ -146,6 +146,7 @@ if [[ "$IS_BREW_INSTALLED" == "0" ]]; then
 		brew_dependency_check --cask microsoft-remote-desktop 
 		brew_dependency_check --cask qbittorrent 
 		brew_dependency_check --cask amethyst 
+		brew_dependency_check --cask the-unarchiver
 
 		install_dependencies $UNINSTALLED_DEPENDENCIES
 		install_cask_dependencies $UNINSTALLED_CASK_DEPENDENCIES
