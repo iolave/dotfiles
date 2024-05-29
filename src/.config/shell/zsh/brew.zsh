@@ -134,6 +134,7 @@ if [[ "$IS_BREW_INSTALLED" == "0" ]]; then
 		brew_dependency_check rustc rust
 		brew_dependency_check terraform
 		brew_dependency_check gpg 
+		brew_dependency_check iperf 
 		brew_dependency_check protolint 
 		brew_dependency_check javac oracle-jdk 
 		brew_dependency_check --cask raycast 
