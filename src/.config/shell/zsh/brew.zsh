@@ -152,6 +152,7 @@ if [[ "$IS_BREW_INSTALLED" == "0" ]]; then
 		brew_dependency_check --cask the-unarchiver
 		brew_dependency_check --cask balenaetcher 
 		brew_dependency_check --cask drawio
+		brew_dependency_check --cask discord
 
 		install_dependencies $UNINSTALLED_DEPENDENCIES
 		install_cask_dependencies $UNINSTALLED_CASK_DEPENDENCIES
