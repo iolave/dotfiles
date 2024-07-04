@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Docker env
-export DOCKER_HOST=ssh://docker.pingolabs.com
+export DOCKER_HOST=ssh://iolave@10.0.20.10
 
 # Bun env
 export BUN_INSTALL="$HOME/.bun"
