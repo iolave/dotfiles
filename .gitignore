@@ -4,3 +4,7 @@ src/.warp/themes
 src/.config/htop/htoprc.tmp*
 src/.config/packer
 src/.config/qBittorrent
+# github.com/iolave/neovim-config
+src/.config/nvim
+# Added by nodemon
+src/.config/simple-update-notifier
