@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Docker env
-export DOCKER_HOST=ssh://iolave@10.0.20.10
+export DOCKER_HOST=ssh://iolave@10.0.20.20
 
 # Bun env
 export BUN_INSTALL="$HOME/.bun"
