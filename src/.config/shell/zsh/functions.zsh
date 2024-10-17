@@ -51,3 +51,15 @@ function push_branch () {
 	git push origin $(git branch --show-current)
 }
 
+function bi () {
+        eval "brew install ${@}"
+}
+
+function bs () {
+        eval "brew search ${@}"
+}
+
+function bu () {
+        eval "brew uninstall ${@}"
+}
+
