@@ -6,5 +6,6 @@ src/.config/packer
 src/.config/qBittorrent
 # github.com/iolave/neovim-config
 src/.config/nvim
+src/.config/slack-term
 # Added by nodemon
 src/.config/simple-update-notifier
