@@ -5,7 +5,8 @@ export DOCKER_HOST=ssh://iolave@10.0.20.20
 
 # Bun env
 export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="${PATH}:${HOME}/go/bin"
 if [[ "$(uname)" == "Darwin" ]]; then
         [ -s "/Users/$(whoami)/.bun/_bun" ] && source "/Users/$(whoami)/.bun/_bun"
 fi
