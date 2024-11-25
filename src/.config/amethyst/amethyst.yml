@@ -9,7 +9,8 @@ layouts:
   - row
 floating: [
   "com.apple.finder",
-  "com.apple.systempreferences"
+  "com.apple.systempreferences",
+  "com.apple.ScreenContinuity"
 ]
 enables-layout-hud-on-space-change: false
 restore-layouts-on-launch: true
