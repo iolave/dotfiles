@@ -3,10 +3,8 @@
 # be configured.
 
 layouts:
-  - tall-right
   - tall
-  - floating
-  - row
+  - fullscreen
 floating: [
   "com.apple.finder",
   "com.apple.systempreferences"
