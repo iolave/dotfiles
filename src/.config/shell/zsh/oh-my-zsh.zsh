@@ -1,12 +1,12 @@
 # Checking for oh-my-zsh install. If it is not found it will ran
 # the install command from the website (https://ohmyz.sh/)
 if [ "$(uname)" = "Darwin" ]; then
-	if [ ! -d "/Users/$(whoami)/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ]; then
-		git clone https://github.com/zsh-users/zsh-autosuggestions /Users/$(whoami)/.oh-my-zsh/custom/plugins/zsh-autosuggestions 
+	if [ ! -d "${HOME}/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ]; then
+		git clone https://github.com/zsh-users/zsh-autosuggestions ${HOME}/.oh-my-zsh/custom/plugins/zsh-autosuggestions 
 	fi
 
-	THEMES_DIR="/Users/$(whoami)/.oh-my-zsh/custom/themes"
-	MY_THEMES_DIR="/Users/$(whoami)/.config/shell/zsh/themes"
+	THEMES_DIR="${HOME}/.oh-my-zsh/custom/themes"
+	MY_THEMES_DIR="${HOME}/.config/shell/zsh/themes"
 	if [ ! -h "$THEMES_DIR" ]; then
 		rm -rf $THEMES_DIR
 		ln -s $MY_THEMES_DIR $THEMES_DIR
