@@ -123,9 +123,9 @@ if [[ "$IS_BREW_INSTALLED" == "0" ]]; then
 		brew_dependency_check aws awscli
 		brew_dependency_check htop
 		brew_dependency_check nvim neovim
-		brew_dependency_check bun oven-sh/bun/bun
+		# brew_dependency_check bun oven-sh/bun/bun
 		brew_dependency_check nmap 
-		brew_dependency_check openvpn
+		# brew_dependency_check openvpn
 		brew_dependency_check telnet
 		brew_dependency_check stow
 		brew_dependency_check volta
@@ -141,16 +141,18 @@ if [[ "$IS_BREW_INSTALLED" == "0" ]]; then
 		brew_dependency_check lazydocker 
 		brew_dependency_check eslint 
 		brew_dependency_check tsc typescript 
-		brew_dependency_check colima
+		# brew_dependency_check colima
 		brew_dependency_check --cask raycast 
-		brew_dependency_check --cask visual-studio-code
+		# brew_dependency_check --cask visual-studio-code
 		brew_dependency_check --cask tiles
 		brew_dependency_check --cask alt-tab
 		brew_dependency_check --cask slack
-		brew_dependency_check --cask warp
+		# brew_dependency_check --cask warp
+		brew_dependency_check --cask ghostty 
 		brew_dependency_check --cask hiddenbar 
-		brew_dependency_check --cask firefox 
-		brew_dependency_check --cask microsoft-remote-desktop 
+		brew_dependency_check --cask vivaldi 
+		# brew_dependency_check --cask firefox 
+		# brew_dependency_check --cask microsoft-remote-desktop 
 		brew_dependency_check --cask qbittorrent 
 		brew_dependency_check --cask amethyst 
 		brew_dependency_check --cask the-unarchiver
