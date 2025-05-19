@@ -141,16 +141,16 @@ if [[ "$IS_BREW_INSTALLED" == "0" ]]; then
 		brew_dependency_check lazydocker 
 		brew_dependency_check eslint 
 		brew_dependency_check tsc typescript 
-		# brew_dependency_check colima
+		brew_dependency_check colima
 		brew_dependency_check --cask raycast 
 		# brew_dependency_check --cask visual-studio-code
 		brew_dependency_check --cask tiles
 		brew_dependency_check --cask alt-tab
 		brew_dependency_check --cask slack
-		# brew_dependency_check --cask warp
-		brew_dependency_check --cask ghostty 
+		brew_dependency_check --cask warp
+		# brew_dependency_check --cask ghostty 
 		brew_dependency_check --cask hiddenbar 
-		brew_dependency_check --cask vivaldi 
+		# brew_dependency_check --cask vivaldi 
 		# brew_dependency_check --cask firefox 
 		# brew_dependency_check --cask microsoft-remote-desktop 
 		brew_dependency_check --cask qbittorrent 
@@ -159,6 +159,8 @@ if [[ "$IS_BREW_INSTALLED" == "0" ]]; then
 		brew_dependency_check --cask balenaetcher 
 		brew_dependency_check --cask drawio
 		brew_dependency_check --cask discord
+		brew_dependency_check --cask marta
+		brew_dependency_check --cask brave-browser
 
 		install_dependencies $UNINSTALLED_DEPENDENCIES
 		install_cask_dependencies $UNINSTALLED_CASK_DEPENDENCIES
