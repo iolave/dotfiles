@@ -142,6 +142,7 @@ if [[ "$IS_BREW_INSTALLED" == "0" ]]; then
 		brew_dependency_check eslint 
 		brew_dependency_check tsc typescript 
 		brew_dependency_check colima
+		brew_dependency_check rg ripgrep
 		brew_dependency_check --cask raycast 
 		# brew_dependency_check --cask visual-studio-code
 		brew_dependency_check --cask tiles
