@@ -63,3 +63,7 @@ function bu () {
         eval "brew uninstall ${@}"
 }
 
+function ta () {
+	~/.config/tmux/create-sessions.sh
+	tmux attach
+}
