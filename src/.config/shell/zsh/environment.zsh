@@ -12,8 +12,8 @@
 # fi
 
 # Volta env
-# export VOLTA_HOME="$HOME/.volta"
-# export PATH="$VOLTA_HOME/bin:$PATH"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 export EDITOR=vim
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
