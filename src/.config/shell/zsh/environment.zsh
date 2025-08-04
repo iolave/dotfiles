@@ -11,6 +11,8 @@
 #         [ -s "/Users/$(whoami)/.bun/_bun" ] && source "/Users/$(whoami)/.bun/_bun"
 # fi
 
+export TERM=xterm-256color
+
 # Volta env
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
