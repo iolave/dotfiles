@@ -67,3 +67,13 @@ function ta () {
 	~/.config/tmux/create-sessions.sh
 	tmux attach
 }
+
+# sl - shortcut for "networksetup -switchtolocation"
+function sl() {
+  if [ -z "$1" ]; then
+    echo "Usage: ns <network-location>"
+    return 1
+  fi
+
+  networksetup -switchtolocation "$1"
+}
