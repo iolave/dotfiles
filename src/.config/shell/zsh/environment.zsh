@@ -19,3 +19,5 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 export EDITOR=vim
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
+export PATH="$PATH:/opt/iolave"
+export PATH="$PATH:$HOME/go/bin"
