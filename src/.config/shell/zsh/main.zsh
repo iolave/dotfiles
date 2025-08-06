@@ -12,3 +12,7 @@ source $ROOT_DIR/environment.zsh
 source $ROOT_DIR/aliases.zsh
 source $ROOT_DIR/functions.zsh
 
+if [ -f $ROOT_DIR/custom.zsh ]; then
+  source $ROOT_DIR/custom.zsh
+fi
+

@@ -10,3 +10,4 @@ src/.config/slack-term
 # Added by nodemon
 src/.config/simple-update-notifier
 src/.config/steinberg-download-assistant
+src/.config/shell/zsh/custom.zsh
