@@ -70,10 +70,20 @@ function ta () {
 
 # sl - shortcut for "networksetup -switchtolocation"
 function sl() {
-  if [ -z "$1" ]; then
-    echo "Usage: ns <network-location>"
-    return 1
-  fi
+	if [ -z "$1" ]; then
+		echo "Usage: sl <location>"
+		return 1
+	fi
 
-  networksetup -switchtolocation "$1"
+	networksetup -switchtolocation "$1"
+}
+
+# Gets last commit hash. If pbcopy is available, copies it to the clipboard.
+function lc() {
+	hash=$(git log | head -n 1 | awk '{print $2}')
+	echo $hash
+
+	if hash pbcopy 2>/dev/null; then
+		echo $hash | pbcopy
+	fi
 }
