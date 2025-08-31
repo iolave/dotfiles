@@ -148,7 +148,7 @@ if [[ "$IS_BREW_INSTALLED" == "0" ]]; then
 		brew_dependency_check --cask tiles
 		brew_dependency_check --cask alt-tab
 		brew_dependency_check --cask slack
-		brew_dependency_check --cask warp
+		brew_dependency_check --cask kitty
 		# brew_dependency_check --cask ghostty 
 		brew_dependency_check --cask hiddenbar 
 		# brew_dependency_check --cask vivaldi 
