@@ -1,0 +1,28 @@
+{
+	"connections": [
+		{
+			"type": "lanshare",
+			"title": "sharing",
+			"uuid": "8b0efd58-1aa6-4bf2-923f-6e404ba40523",
+			"user": "iolave",
+			"host": "nas.internal.pingolabs.cl",
+			"share": "Sharing",
+			"mountpoint": "",
+			"proto": 0
+		},
+		{
+			"type": "lanshare",
+			"title": "iolave",
+			"uuid": "c22fe94d-74b9-4b84-ba91-2773dfa75cc9",
+			"user": "iolave",
+			"host": "nas.internal.pingolabs.cl",
+			"share": "Ignacio Olave",
+			"mountpoint": "",
+			"proto": 0
+		}
+	],
+	"mostRecentlyUsed": [
+		"c22fe94d-74b9-4b84-ba91-2773dfa75cc9",
+		"8b0efd58-1aa6-4bf2-923f-6e404ba40523"
+	]
+}

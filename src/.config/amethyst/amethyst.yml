@@ -8,7 +8,9 @@ layouts:
 floating: [
   "com.apple.finder",
   "com.apple.systempreferences",
-  "com.apple.ScreenContinuity"
+  "com.apple.ScreenContinuity",
+  "info.filesmanager.Files",
+  "com.teac.US-16x08_SettingsPanel",
 ]
 enables-layout-hud-on-space-change: false
 restore-layouts-on-launch: true

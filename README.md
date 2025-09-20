@@ -11,6 +11,5 @@ Clone this repo, cd into it and run the following command
 
 ```bash
 stow -d src -t $HOME .
+stow -d ./apps/nimble-commander -t $HOME/Library/Application\ Support/Nimble\ Commander/Config .
 ```
-
-

@@ -160,7 +160,7 @@ if [[ "$IS_BREW_INSTALLED" == "0" ]]; then
 		brew_dependency_check --cask balenaetcher 
 		brew_dependency_check --cask drawio
 		brew_dependency_check --cask discord
-		brew_dependency_check --cask marta
+		brew_dependency_check --cask nimble-commander
 		brew_dependency_check --cask brave-browser
 
 		install_dependencies $UNINSTALLED_DEPENDENCIES
