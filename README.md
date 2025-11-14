@@ -1,6 +1,7 @@
 # @iolave's dot files config
 
 ## Dependencies
+### MacOS
 ```bash
 # gnu stow
 brew install stow # macOS
@@ -9,7 +10,8 @@ brew install stow # macOS
 ## Place dot files where they belong
 Clone this repo, cd into it and run the following command
 
+### MacOS
 ```bash
-stow -d src -t $HOME .
-stow -d ./apps/nimble-commander -t $HOME/Library/Application\ Support/Nimble\ Commander/Config .
+stow -d macos -t $HOME .
+stow -d ./apps/macos/nimble-commander -t $HOME/Library/Application\ Support/Nimble\ Commander/Config .
 ```

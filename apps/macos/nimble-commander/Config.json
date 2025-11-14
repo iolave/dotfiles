@@ -1,0 +1,142 @@
+{
+    "general": {
+        "theme": "Dark",
+        "notifications": {}
+    },
+    "filePanel": {
+        "general": {},
+        "presentation": {},
+        "quickSearch": {},
+        "FinderTags": {
+            "tags": {
+                "v1": []
+            }
+        },
+        "spotlight": {},
+        "operations": {},
+        "layout": {
+            "layouts_v1": [
+                {
+                    "title": "Short",
+                    "brief": {
+                        "mode": 1,
+                        "fixed_mode_width": 150,
+                        "fixed_amount_value": 3,
+                        "dynamic_width_min": 140,
+                        "dynamic_width_max": 300,
+                        "dynamic_width_equal": false,
+                        "icon_scale": 1
+                    }
+                },
+                {
+                    "title": "Medium",
+                    "brief": {
+                        "mode": 2,
+                        "fixed_mode_width": 150,
+                        "fixed_amount_value": 3,
+                        "dynamic_width_min": 140,
+                        "dynamic_width_max": 300,
+                        "dynamic_width_equal": false,
+                        "icon_scale": 1
+                    }
+                },
+                {
+                    "title": "Full",
+                    "list": {
+                        "columns": [
+                            {
+                                "kind": 1
+                            },
+                            {
+                                "kind": 2
+                            },
+                            {
+                                "kind": 3
+                            },
+                            {
+                                "kind": 5
+                            },
+                            {
+                                "kind": 4
+                            }
+                        ],
+                        "icon_scale": 1
+                    }
+                },
+                {
+                    "title": "Wide",
+                    "list": {
+                        "columns": [
+                            {
+                                "kind": 1,
+                                "width": 588
+                            },
+                            {
+                                "kind": 2,
+                                "width": 75
+                            },
+                            {
+                                "kind": 7,
+                                "width": 103
+                            },
+                            {
+                                "kind": 3,
+                                "width": 87
+                            },
+                            {
+                                "kind": 5,
+                                "width": 90
+                            }
+                        ],
+                        "icon_scale": 1
+                    }
+                },
+                {
+                    "title": "Custom Layout V",
+                    "disabled": null
+                },
+                {
+                    "title": "Custom Layout VI",
+                    "disabled": null
+                },
+                {
+                    "title": "Custom Layout VII",
+                    "disabled": null
+                },
+                {
+                    "title": "Custom Layout VIII",
+                    "disabled": null
+                },
+                {
+                    "title": "Custom Layout IX",
+                    "disabled": null
+                },
+                {
+                    "title": "Custom Layout X",
+                    "disabled": null
+                }
+            ]
+        }
+    },
+    "viewer": {
+        "fileWindowSize": 4
+    },
+    "terminal": {},
+    "externalTools": {},
+    "externalEditors": {
+        "editors_v1": [
+            {
+                "name": "vim",
+                "path": "/opt/homebrew/bin/nvim",
+                "args": "%%",
+                "mask": "*",
+                "maxFileSize": 0,
+                "onlyFiles": true,
+                "openInTerminal": true
+            }
+        ]
+    },
+    "themes": {
+        "automaticSwitching": {}
+    }
+}
