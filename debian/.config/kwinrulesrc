@@ -1,0 +1,14 @@
+[2a02c614-eb2f-4467-b1c9-9619b0b25ddb]
+Description=Window settings for net-runelite-client-RuneLite
+below=true
+belowrule=3
+clientmachine=localhost
+title=RuneLite - mice1337
+titlematch=1
+types=1
+wmclass=net-runelite-client-RuneLite
+wmclassmatch=1
+
+[General]
+count=1
+rules=2a02c614-eb2f-4467-b1c9-9619b0b25ddb
