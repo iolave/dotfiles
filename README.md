@@ -38,18 +38,9 @@ Now follow the instructions for your OS.
 ## Place dot files where they belong
 Clone this repo, cd into it and run the following command
 
-### MacOS
 ```bash
-stow -d macos -t $HOME .
-stow -d ./apps/macos/nimble-commander -t $HOME/Library/Application\ Support/Nimble\ Commander/Config .
+make install
+source ~/.zshrc
 ```
 
-### Asahi Fedora
-```bash
-stow -d asahi-fedora -t $HOME .
-```
-
-### Debian
-```bash
-stow -d debian -t $HOME .
-```
+This will install the dot files to the appropriate location.

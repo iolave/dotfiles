@@ -11,3 +11,5 @@ src/.config/slack-term
 src/.config/simple-update-notifier
 src/.config/steinberg-download-assistant
 src/.config/shell/zsh/custom.zsh
+.tmp
+home/.config/shell/custom.zsh

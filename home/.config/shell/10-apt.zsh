@@ -1,5 +1,11 @@
 #!/bin/zsh
 
+# check if apt is installed
+which apt &> /dev/null
+if [ $? -ne 0 ]; then
+	return 
+fi
+
 function check_install_with_known_binary() {
 	bin=$1
 	pkg=$2
