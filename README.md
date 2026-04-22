@@ -44,3 +44,5 @@ source ~/.zshrc
 ```
 
 This will install the dot files to the appropriate location.
+
+*Note: For kde window manager, shorcuts have to be installed manually.*
