@@ -132,18 +132,14 @@ ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
-[DirSelect Dialog]
-DirSelectDialog Size=820,584
-History Items[$e]=file:$HOME/private.enc,file:///mnt/bulk
-Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x8c\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
-
 [General]
 BrowserApplication=brave-browser.desktop
-ColorSchemeHash=7b61368c55eaab4075e7b1ae9501f3675b0f830f
+ColorSchemeHash=2c3f86428c11011a7c64ee1e7f47c274d498ff10
 
 [KDE]
 AnimationDurationFactor=0
 LookAndFeelPackage=org.kde.breezedark.desktop
+ShowDeleteCommand=false
 
 [KFileDialog Settings]
 Allow Expansion=false
@@ -161,6 +157,10 @@ Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=140
 View Style=Detail
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0
 
 [Shortcuts]
 SaveAs=
