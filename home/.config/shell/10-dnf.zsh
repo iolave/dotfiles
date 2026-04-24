@@ -6,3 +6,4 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "TODO: implement dnf package installation"
+# kdotool
