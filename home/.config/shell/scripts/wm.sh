@@ -8,7 +8,7 @@ fi
 active=$(kdotool getactivewindow) 
 
 found=false
-for i in $(kdotool search -a); do
+for i in $(kdotool search ""); do
 	name=$(kdotool getwindowclassname "$i")
 	if [[ "$name" == "$1" ]]; then
 		if [[ "$i" == "$active" ]]; then
