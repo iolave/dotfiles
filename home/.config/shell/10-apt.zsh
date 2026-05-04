@@ -38,7 +38,8 @@ check_install_with_known_binary "rgrep" "ripgrep"
 check_install_with_known_binary "ksystemlog"
 check_install_with_known_binary "tree-sitter" "tree-sitter-cli"
 check_install_with_known_binary "obs" "obs-studio"
-check_install_with_known_binary "docker" "docker-cli"
+check_install_with_known_binary "aws" "awscli"
+check_install_with_known_binary "sshuttle"
 
 # TEMURIN JDK
 if [ ! -f "/etc/apt/sources.list.d/adoptium.list" ]; then
@@ -87,3 +88,19 @@ Type=Application
 Categories=Development;
 END
 fi
+
+# DOCKER
+which docker &> /dev/null
+if [ $? -eq 1 ]; then
+	sudo tee /etc/apt/sources.list.d/docker.sources > /dev/null <<EOF
+Types: deb
+URIs: https://download.docker.com/linux/debian
+Suites: $(. /etc/os-release && echo "$VERSION_CODENAME")
+Components: stable
+Architectures: $(dpkg --print-architecture)
+Signed-By: /etc/apt/keyrings/docker.asc
+EOF
+	sudo apt update
+	sudo apt install docker-ce docker-ce-cli containerd.io
+fi
+
