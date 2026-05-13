@@ -7,3 +7,4 @@ fi
 
 echo "TODO: implement dnf package installation"
 # kdotool
+# docker-cli
