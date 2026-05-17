@@ -1,5 +1,10 @@
 # @iolave's dot files config
 
+> [!IMPORTANT]
+> This repository was migrated to codeberg.
+> 
+> Please refer to [codeberg.org:mice1337/config](https://codeberg.org/mice1337/config)
+
 ## Dependencies
 ```bash
 # gnu stow
